@@ -49,6 +49,17 @@ return array(
 //		'db'=>array(
 //			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 //		),
+
+		'log'=>array(
+			'class'=>'CLogRouter',
+			'routes'=>array(
+				array(
+					'class'=>'CWebLogRoute',
+					'levels'=>'trace, info',
+				)
+			)
+		),
+
 		// uncomment the following to use a MySQL database
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=marta_feedback',

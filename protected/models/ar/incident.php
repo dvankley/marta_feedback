@@ -7,7 +7,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-class test_table extends CActiveRecord
+class Incident extends CActiveRecord
 {
 	public static function model($className=__CLASS__)
 	{
@@ -16,6 +16,6 @@ class test_table extends CActiveRecord
 
 	public function tableName()
 	{
-		return 'test_table';
+		return 'incident';
 	}
 }

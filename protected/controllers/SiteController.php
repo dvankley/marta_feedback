@@ -32,11 +32,11 @@ class SiteController extends Controller
 		//echo print_r(Yii::app()->db->createCommand('SELECT * FROM test_table'));
 
 		$criteria=new CDbCriteria;
-		$criteria->select='name';  // only select the 'title' column
+		//$criteria->select='name';  // only select the 'title' column
 		$criteria->condition='id=1';
-		$test_table=test_table::model()->find($criteria); // $params is not needed
-		print_r($test_table);
-		print_r($test_table->name);
+		$user=user::model()->find($criteria); // $params is not needed
+		//print_r($user);
+		print_r($user->email);
 
 
 		$this->render('index');
